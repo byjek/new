@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+* 
+  box-sizing: border-box
+  
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+$text: uppercase 
+$color: white
+$float: left
+
+header
+  position: relaitve
+  background-color: #313234
+  width: 100%
+  margin: 0 auto	
+  nav img
+    padding: 10px 0
+    position: absolute
+    left: 10%
+    top: 2%
+  nav ul
+    float: right
+    margin: 0
+    padding: 0
+    list-style-type: none	
+    li
+      display: inline-block
+      a
+        line-height: 100px
+        display: block
+        color: #fff
+        padding: 0 50px
+        text-decoration: none
+        text-transform: $text
+        font-family: 'Open Sans'
+        font-weight: bold
+        &:hover 
+          color: #03cbec
+    
+    
+.slogan
+  h1
+    line-height: 60px
+
+body 
+  margin: 0 auto
+  font-family: 'Open Sans', sans-serif
+	
+
+.container:after,
+.container:before 
+  content: ""
+  display: table
+  clear: both
+
+
+.row:after,
+.row:before 
+  content: ""
+  display: table
+  clear: both
+
+.container 
+  max-width: 1200px
+  margin: auto
+  text-align: center
+
+.hero 
+  position: relative
+  height: 500px
+  background: url('https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') 0/cover
+
+
+.slogan 
+  position: absolute
+  right: 0
+  bottom: 40%
+  background-color: rgba(0, 0, 0, 0.5)
+  color: $color
+  text-transform: $text
+  width: 400px
+  height: 100px
+
+[class*="col-"] 
+  width: 100%
+  padding: 12px
+  float: $float
+
+
+.col-1 
+  width: 8.33%
+
+
+.col-2 
+  width: 16.66%
+
+
+.col-3 
+  width: 25%
+
+
+.col-4 
+  width: 33.33%
+
+
+.col-5 
+  width: 41.66%
+
+
+.col-6 
+  width: 50%
+
+
+.col-7 
+  width: 58.33%
+
+
+.col-8 
+  width: 66.66%
+
+
+.col-9 
+  width: 75%
+
+
+.col-10 
+  width: 83.33%
+
+
+.col-11 
+  width: 91.66%
+
+
+.col-12 
+  width: 100%
+
+
+.col-20 
+  width: 20%
+
+
+.col-offset-1 
+  margin-left: 8.33%
+
+
+.col-offset-2 
+  margin-left: 16.66%
+
+
+.col-offset-3 
+  margin-left: 25%
+
+
+.col-offset-4 
+  margin-left: 33.33%
+
+
+.col-offset-5 
+  margin-left: 41.66%
+
+
+.col-offset-6 
+  margin-left: 50%
+
+
+.col-offset-7 
+  margin-left: 58.33%
+
+
+.col-offset-8 
+  margin-left: 66.66%
+
+
+.col-offset-9 
+  margin-left: 75%
+
+
+.col-offset-10 
+  margin-left: 83.33%
+
+
+.col-offset-11 
+  margin-left: 91.66%
+
+
+.col-offset-12 
+  margin-left: 100%
+
+
+.row 
+  width: 100%
+  text-align: center
+
+
+i.three-icons 
+  font-size: 50px
+  color: $color
+  background-color: black
+  +border-radius(20px)
+  padding: 30px
+  &:hover
+    background-color: #00c7e8
+    transition: ease-out 0.4s
+
+.icons 
+  margin-top: 50px
+
+.img-hover 
+  position: relative
+  &:hover
+    opacity: 0.8
+    cursor: pointer 
+
+
+.two-icons 
+  position: absolute
+  top: 40%
+  left: 30%
+  color: $color
+  font-size: 30px
+  display: none
+
+
+.gallery [class*="col-"]:hover .two-icons 
+  display: block
+
+.team img 
+  width: 100%
+  border-radius: 50%
+
+.gallery 
+  .col-20 
+    padding: 0%
+  img
+    width: 100%
+    display: block
+
+.promotion 
+  background-color: #2980b9
+  color: $color
+  font-weight: bold
+  p
+    width: 50%
+    float: $float
+  img
+    width: 100%
+    border-radius: 15px
+
+.numbers h2 
+  font-size: 2em
+  font-weight: bold
+  margin-bottom: 0
+  cursor: context-menu
+  transition: ease-in-out 0.6s
+
+
+.numbers p 
+  color: #03cbec
+  text-transform: $text
+  font-weight: bold
+
+.numbers div:hover h2 
+  transform: scale(1.6)
+  transition: ease-out 0.6s
+  color: #98C609
+
+.contact 
+  background-color: #98C609
+  color: $color
+
+.footer-bottom 
+  background: #313332
+  color: $color
+  text-align: center
+  padding: 10px
+
+.social i 
+  font-size: 1.2em
+  background-color: #03cbec
+  padding: 14px
+  margin-right: 3px
+
+@media (max-width: 767px) 
+  /* For tablets: */
+  .col-s-1 
+    width: 8.33%
+  .col-s-2 
+    width: 16.66%
+  .col-s-3 
+    width: 25%
+  .col-s-4 
+    width: 33.33%
+  .col-s-5 
+    width: 41.66%
+  .col-s-6 
+    width: 50%
+  .col-s-7 
+    width: 58.33%
+  .col-s-8 
+    width: 66.66%
+  .col-s-9 
+    width: 75%
+  .col-s-10 
+    width: 83.33%
+  .col-s-11 
+    width: 91.66%
+  .col-s-12 
+    width: 100%
+  .two-icons 
+    display: block
+  header 
+    nav ul 
+      float: $float
+      margin-top: 8vh
+      margin-left: 40%
+      margin-right: 40%
+      li 
+        display: block
+    nav img 
+      left: 40%
+      right: 40%
